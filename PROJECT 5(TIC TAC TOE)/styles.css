@@ -1,0 +1,152 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+.wrapper{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(gradient-bg.jpg);
+    flex-wrap: wrap;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+     color:white;  
+     width:20%;
+     height:7%;
+     background-color: rgba(255, 255, 255, 0.15);
+    border: none;
+    border-radius: 20px;
+}
+
+.tct{
+
+   width:20%;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    aspect-ratio: 1/1;
+}
+.bu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 10%;
+    flex-wrap: wrap;
+    opacity: 0;
+}
+
+
+[data-NewGame]{
+
+     color:white;  
+     width:40%;
+     height:60%;
+ background-color: rgba(255, 255, 255, 0.15);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position:relative;
+    aspect-ratio: 1/1;
+     font-size: 3rem;
+     cursor: pointer;
+}
+.box1, .box2, .box4, .box5{
+    border-right:2px solid white;
+    border-bottom:2px solid white;
+}
+
+.box3, .box6{
+    border-bottom: 2px solid white;
+}
+
+.box7, .box8{
+    border-right:2px solid white;
+}
+
+.win{
+    background-color: rgba(0, 255, 0, 0.3);
+}
+
+@media (max-width:800px) {
+    .info{
+        width: 40%;
+        height:10%;
+    }
+    .bu{
+        width: 60%;
+    }
+    .tct{
+        width: 40%;
+        font-size: large;
+    }
+  
+}
+
+@media(max-width:720px){
+  .info{
+        width: 60%;
+    }
+    .bu{
+        width: 70%;
+    }
+     .tct{
+        width: 50%;
+    }
+    .box{
+          font-size:large
+    }
+}
+@media (max-width:400px) {
+    .info{
+        width: 60%;
+    }
+    .bu{
+        width: 70%;
+    }
+     .tct{
+        width: 50%;
+    }
+    .box{
+          font-size: small;
+    }
+}
+
+@media(max-width:280px){
+    .info{
+        width: 80%;
+    }
+    .bu{
+        width: 90%;
+    }
+     .tct{
+        width: 80%;
+    }
+    .box{
+          font-size: small;
+    }
+
+}
